@@ -1,0 +1,49 @@
+# Ignore all CSV files
+*.csv
+
+# Ignore all 'classes' directories at any level
+**/classes/
+
+# Ignore node_modules (for Node.js projects)
+node_modules/
+
+# Ignore MacOS system files
+.DS_Store
+
+# Ignore Windows system files
+Thumbs.db
+
+# Ignore IDE-related files (for Visual Studio, IntelliJ, etc.)
+.idea/
+.vscode/
+.vscode-test/
+.vs/
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+*.bak
+
+# Ignore Maven build directories (for Java projects)
+target/
+
+# Ignore Gradle build directories (for Java projects)
+build/
+
+# Ignore compiled Java class files
+*.class
+
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+
+# Ignore JetBrains IDE files
+.idea/
+
+# Ignore compiled C++ object files
+*.o
+*.a
+*.so
+
