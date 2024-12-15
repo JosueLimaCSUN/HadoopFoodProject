@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<style> 
+    /*body {
+        background-image: url(https://cdn.georgeinstitute.org/sites/default/files/2020-10/world-food-day-2020.png) ;
+    }*/
+
+    .div-1 {
+        background-color: yellowgreen;
+        color: green;
+        border: none;
+        border-radius: 10px;
+
+        width: 500px;
+        height: 200px;
+        padding: 15px 32px;
+
+        text-align: center;
+        font-size: 16px;
+        text-decoration: none;
+
+        justify-content: center;
+        left: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        margin: 4px 2px;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .div-2 {
+        background-color: pink;
+        color: red;
+        text-decoration: none;
+        border: none;
+        border-radius: 10px;
+
+        width: 500px;
+        height: 200px;
+        padding: 15px 32px;
+
+        text-align: center;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    h1 {
+        padding-top: 15px;
+    }
+
+</style>
+
+<center>
+<div class="div-1">
+    <h1 style="text-align: center">Let's Get Cooking </h1>
+    <p style="text-align: center">Type in your ingredient and enter.</p>
+    <!-- enter adds it to a tag -->
+    <input type = "text" id = "myInput"/>
+    <!-- script: enter adds it to a tag -->
+    <input type = "button" value="Give me recipes." onclick="recipes()"/>
+</div>
+
+<div class="div-2" style="text-align: center">
+    <p style="text-align: center" id="ingredients">Ingredients: </p>
+    <p style="text-align: center" id="recipes">Recipes will show up here.</p>
+    <!-- enter adds it to a tag -->
+    <!-- script: enter adds it to a tag -->
+</div-2>
+</center>
+
+<script>
+    let ingredients = "Ingredients: ";
+    var input = document.getElementById("myInput");
+
+
+    input.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        const inputField = document.getElementById('myInput');
+        ingredients += inputField.value + ", ";
+        document.getElementById('ingredients').innerText = ingredients;
+        inputField.value = ''; 
+    }
+    });
+
+    function recipes() {
+        document.getElementById('recipes').innerText = "May-lotes: 4 ears fresh sweet corn, shucked, 1 tablespoon paprika, 1 teaspoon chili powder, 1 teaspoon smoked sea salt, roasted poblano mayo, recipe follows, 1 cup crumbled cotija cheese, 1/2 cup fresh cilantro leaves, chopped, 1 small poblano pepper, 1 cup store-bought or homemade mayo, 2 teaspoons honey, 1/2 teaspoon ground cumin, 1/2 teaspoon granulated garlic, kosher salt]","[On a hot grill, char each side of fresh corn until the kernels develop some color, 5 to 6 minutes., Mix together the paprika, chili powder and smoked sea salt., Slather each ear with the Roasted Poblano Mayo, and then dust in the Cotija, cilantro and seasoned salt., Roast the whole poblano over an open flame on your stove-top until all sides are charred black, 5 to 6 minutes per side., Let rest in a paper bag until cool, about 15 minutes., Peel off the charred skin, and then remove the stem, seeds and ribs., Mince the pepper., Stir together the minced poblano with the mayo, honey, cumin, garlic and some salt.] # 1 Baked Chicken With Marinara Sauce [1/2 cup flour, 1 teaspoon salt, 1/4 teaspoon pepper, 3 lbs fryer, cut up, 3 tablespoons butter, 1 (15 ounce) can marinara sauce, 1 teaspoon dried dill, 2 tablespoons grated parmesan cheese]","[Wash chicken well under cold water, pat dry.Combine flour,salt and pepper on a paper bag or plastic bag. Add pieces a few at a time and shake until coated with flour mixture. Place chicken in a shallow baking dish. Dot with butter., Bake at 450 for 25 minutes. Remove from oven then pour the marinara sauce over the chicken. Sprinkle with dillweed and cheese. Reduce heat to 350 and bake 25 minutes. Serve hoy or cold.]";
+        
+    }
+
+</script>
+
+</body>
+</html>
